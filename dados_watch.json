@@ -1,0 +1,1 @@
+[{"id_usuario": 101, "nome": "Carlos", "saude": {"batimentos": 78, "passos": 4500, "sono": "8h"}, "dispositivo": "Galaxy Watch 5"}, {"id_usuario": 102, "nome": "Fernanda", "saude": {"batimentos": 110, "passos": 12000, "sono": "6h"}, "dispositivo": "Galaxy Watch 6"}]
