@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-with open('assinantes.json', 'r') as f:
+with open('data/assinantes.json', 'r') as f:
     dados_brutos = json.load(f)
     
 df = pd.json_normalize(dados_brutos)
@@ -21,6 +21,6 @@ print(f"Faturamento Mensal (Premium): R$ {total_faturamento:.2f}")
 
 # Exportar para o Excel
 colunas_finais = ['nome', 'detalhes_assinatura.plano', 'detalhes_assinatura.valor_mensal']
-df_premium[colunas_finais].to_excel('Faturamento_premium.xlsx', index=False)
+df_premium[colunas_finais].to_excel('output/Faturamento_premium.xlsx', index=False)
 
 print("\nRealatorio Excel gerado com sucesso")

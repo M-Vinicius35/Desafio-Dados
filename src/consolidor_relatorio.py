@@ -5,7 +5,7 @@ print("--- Iniciando Consolidação ---")
 
 #Listar todos os arquivos que começam com 'vendas_' e terminam com '.csv'
 #O asterisco (*) significa "qualquer coisa aqui no meio"
-lista_arquivos = glob.glob('vendas_*.csv')
+lista_arquivos = glob.glob('data/vendas_*.csv')
 
 print(f"Arquivos encontrados: {len(lista_arquivos)}")
 
@@ -35,5 +35,5 @@ df_final = pd.concat(tabelas_lidas, ignore_index=True)
 print("\n--- Relatório Final Consolidado ---")
 print(df_final)
 
-df_final.to_excel('Relatorio_Mensal.xlsx', index=False)
+df_final.to_excel('output/Relatorio_Mensal.xlsx', index=False)
 print("\nArquivo 'Relatorio_Mensal.xlsx' gerado com sucesso!")

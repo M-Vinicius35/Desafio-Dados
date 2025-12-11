@@ -2,7 +2,7 @@ import pandas as pd
 
 # Carregamento
 print("---Carregamento de Dados---")
-df = pd.read_csv('logs_bateria.csv')
+df = pd.read_csv('data/logs_bateria.csv')
 print(df)
 
 # Remover Duplicatas
@@ -24,5 +24,5 @@ print("\n--- Dispositivos Superaquecidos ---")
 print(alerta_aquecimento)
 
 # Exportar
-alerta_aquecimento.to_csv('relatorio_final.csv', index=False)
+alerta_aquecimento.to_csv('output/relatorio_final.csv', index=False)
 print("\nRelatorio salvo com sucesso!")
